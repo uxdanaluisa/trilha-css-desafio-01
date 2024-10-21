@@ -1,0 +1,183 @@
+/* CSS Geral */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: #000; /* fundo escuro */
+  color: white;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto; /* centraliza horizontalmente */
+  padding: 0 20px;
+}
+
+/* Seção Cabeçalho (Banner) */
+.banner {
+  background: url('assets/images/banner.png') no-repeat center center/cover;
+  height: 732px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  border-bottom: 1px solid #33A8DB;
+}
+
+.banner-content {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.6), rgba(49, 168, 221, 0));
+  padding: 20px;
+}
+
+.banner h1 {
+  font-size: 40px;
+  font-weight: 900;
+  background: linear-gradient(180deg, #33A8DB 0%, #1472B7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.banner p {
+  font-size: 20px;
+  margin: 16px 0;
+}
+
+.banner button {
+  padding: 10px 40px;
+  background-color: transparent;
+  border: 2px solid #33A8DB;
+  color: #33A8DB;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 900;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.banner button:hover {
+  background-color: #33A8DB;
+  color: white;
+}
+
+/* Seção "O que vou aprender" */
+#course-content {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+#course-content h2 {
+  font-size: 40px;
+  font-weight: 900;
+  background: linear-gradient(180deg, #33A8DB 0%, #1472B7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 20px;
+}
+
+#course-content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+/* Estilizando os Módulos */
+.modules-list {
+  display: flex;
+  flex-direction: column; /* Para que os módulos fiquem um embaixo do outro */
+  align-items: center;
+  gap: 20px;
+}
+
+.module {
+  background-color: #111;
+  border: 2px solid #33A8DB;
+  color: white;
+  width: 60%; /* Tornando os módulos mais compridos */
+  padding: 15px 30px;
+  text-align: left;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); /* Adicionando leve relevo */
+  transition: all 0.3s ease;
+}
+
+.module:hover {
+  background-color: #33A8DB;
+  color: white;
+}
+
+.module span {
+  color: #33A8DB; /* Nome do módulo em azul */
+  font-weight: bold;
+}
+
+/* Seção "Transforme o Mundo" */
+#transform-world {
+  background: url('assets/images/woman-code.png') no-repeat center center/cover; /* Adicionando imagem de fundo */
+  padding: 60px 20px;
+  text-align: center;
+  font-size: 2rem; /* Aumentando o tamanho da fonte */
+  font-weight: 900; /* Tornando a fonte mais grossa */
+  color: white;
+  text-shadow: 2px 2px 5px #33A8DB; /* Sombra azul leve */
+  height: 400px; /* Definindo altura para a seção */
+  display: flex;
+  flex-direction: column; /* Organizando os elementos em coluna */
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilo para "a gente" */
+#transform-world .a-gente {
+  font-size: 1.5rem; /* Tamanho da fonte para "a gente" */
+  margin-top: 20px; /* Espaçamento acima */
+}
+
+
+
+/* Seção "Evolua e encare novos desafios" */
+#professional-challenges {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+#professional-challenges h2 {
+  font-size: 2rem;
+  color: #33A8DB;
+}
+
+#professional-challenges img {
+  max-width: 100%;
+  height: auto;
+  margin: 20px 0;
+}
+
+#professional-challenges p {
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+/* Rodapé */
+footer {
+  background-color: #000;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+footer p {
+  font-size: 1rem;
+}
+
+footer a {
+  color: #33A8DB;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
